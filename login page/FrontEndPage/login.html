@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Screen</title>
+    <link href="./login.css" rel="stylesheet">
+  </head>
+  <body className="snippet-body">
+    <div id="container">
+      <div id="formcontainer">
+        <img id="img1" src="../images/login-background-image.jpg">
+        <br />
+        <br />
+        <p id="text">Login to your Account</p>
+        <br />
+        <form>
+          <input id="email" type="email" type="tel" placeholder="Email / Phone" required>
+          <input id="password" type="password" placeholder="Password" required>
+          <br />
+          <br />
+          <button id="login" type="submit"><a href="./profile.html">Log In</a></button>
+        </form>
+      </div>
+    </div>
+
+    <!-- iam Doing js here ( :... -->
+
+    <script type="text/javascript" src="#"></script>
+    <script type="text/javascript" src="#"></script>
+    <script type="text/javascript" src="#"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        document.getElementById("cross").onclick = function() {
+          document.getElementById("formcontainer").style.display = "none";
+        };
+      });
+    </script>
+    <script type="text/javascript">
+      var myLink = document.querySelector('a[href="#"]');
+      myLink.addEventListener('click', function(e) {
+        e.preventDefault();
+      });
+    </script>
+  </body>
+</html>
